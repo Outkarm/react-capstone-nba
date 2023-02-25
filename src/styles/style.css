@@ -79,7 +79,8 @@ body {
 }
 
 .team {
-  background: url(../assets/the-ball/bball-1.jpg),
+  background:
+    url(../assets/the-ball/bball-1.jpg),
     linear-gradient(rgba(255, 77, 166, 0.4), rgba(255, 77, 166, 0.4));
   background-repeat: no-repeat;
   background-size: 190%;
