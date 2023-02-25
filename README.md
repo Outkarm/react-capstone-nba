@@ -18,10 +18,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 World-Information<a name="about-project"></a>
+# 📖 NBA-Information<a name="about-project"></a>
 
-**World-Information**
-world-population is a single-page website where users can view all countries in the world and can see their information e.g their population , language, nativeName etc.
+**NBA-Information**
+NBA-population is a single-page website where users can view NBA Tems in the USA and can see their information e.g Confrence , Name, Division etc.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,9 +42,13 @@ world-population is a single-page website where users can view all countries in 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--[Live Version](https://world-kx2q.onrender.com/)
+-[Live Version](https://nba-info.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Loom Video
+
+https://www.loom.com/share/a8864f72e1fa4788925e41ff4f9820c9
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -52,9 +56,9 @@ world-population is a single-page website where users can view all countries in 
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone ``
+- On the terminal run this command git clone
 
-- Go to the repository folder using command prompt cd `World-info-React-Capstone`
+- Go to the repository folder using command prompt cd
 
 - Install the dev dependencies for linters run npm install.
 - setup Webpack
@@ -79,7 +83,7 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/SabaAhmad404/World-info-React-Capstone
+- On the terminal run this command git clone git@github.com:Outkarm/react-capstone-nba.git
 
 - Go to the repository folder using command prompt cd World-info-React-Capstone
 
@@ -108,7 +112,7 @@ Outkarm Johnson
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/SabaAhmad404/World-info-React-Capstone/issues).
+Feel free to check the [issues page](https://github.com/Outkarm/react-capstone-nba/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
