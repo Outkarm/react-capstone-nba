@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: lato, sans-serif;
+  color: white;
+  background-color: #3445e0;
+  font-weight: 700;
+}
+
+.the-navbar {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.set-mic {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  color: #fff;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.input-search {
+  border: none;
+  background-color: #3445e0;
+  color: #fff;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.nba-main-logo {
+  width: 100%;
+  height: 10rem;
+  background-image: url(../assets/nba-logos/red-nba-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(209, 3, 3);
+  display: flex;
+  background-position-x: center;
+}
+
+.nba-teams {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team {
+  background-image: url(../assets/the-ball/bball-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.team-name {
+  text-align: right;
+  text-decoration: none;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  color: rgb(21, 0, 255);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.back {
+  display: flex;
+  justify-content: right;
+}
+
+li {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.det {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}

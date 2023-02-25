@@ -1,5 +1,5 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   nbaTeams: [],
@@ -7,15 +7,15 @@ const initialState = {
   isLoading: false,
 };
 
-const FETCH_NBA_PLAYERS_DATA = "nbaPlayers/getNbaPlayersData";
-const FETCH_NBA_TEAM_DATA = "nbaTeams/getNbaTeamsData";
+const FETCH_NBA_PLAYERS_DATA = 'nbaPlayers/getNbaPlayersData';
+const FETCH_NBA_TEAM_DATA = 'nbaTeams/getNbaTeamsData';
 
 export const getNbaTeamsData = createAsyncThunk(
   FETCH_NBA_TEAM_DATA,
   async () => {
     try {
       const response = await axios.get(
-        "https://www.balldontlie.io/api/v1/teams"
+        'https://www.balldontlie.io/api/v1/teams',
       );
 
       const nbaTeamApi = [];
@@ -40,12 +40,12 @@ export const getNbaTeamsData = createAsyncThunk(
         };
         nbaTeamApi.push(nbaTeamsData);
       });
-      console.log(nbaTeamApi);
+
       return nbaTeamApi;
     } catch (error) {
       return error;
     }
-  }
+  },
 );
 
 export const getNbaPlayersData = createAsyncThunk(
@@ -53,7 +53,7 @@ export const getNbaPlayersData = createAsyncThunk(
   async () => {
     try {
       const response = await axios.get(
-        "https://www.balldontlie.io/api/v1/players"
+        'https://www.balldontlie.io/api/v1/players',
       );
       const nbaPlayersApi = [];
       response.data.data.forEach((data) => {
@@ -77,16 +77,16 @@ export const getNbaPlayersData = createAsyncThunk(
         };
         nbaPlayersApi.push(nbaPlayersData);
       });
-      console.log(nbaPlayersApi);
+
       return nbaPlayersApi;
     } catch (error) {
       return error;
     }
-  }
+  },
 );
 
 const nbaTeamsSlice = createSlice({
-  name: "nbaTeams",
+  name: 'nbaTeams',
   initialState,
   reducers: {
     nba: (state, action) => ({
@@ -108,6 +108,8 @@ const nbaTeamsSlice = createSlice({
       ...state,
       isLoading: false,
     }),
+  },
+  moreReducers: {
     [getNbaPlayersData.fulfilled]: (state, action) => ({
       ...state,
       nbaPlayers: action.payload,

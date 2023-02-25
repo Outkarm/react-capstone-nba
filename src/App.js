@@ -1,17 +1,17 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import Navigation from "./components/Navigation";
-import TeamsPage from "./components/TeamsPage";
-import TeamPlayers from "./components/TeamPlayers";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navigation from './components/Navigation';
+import Home from './pages/HomePage';
+import InfoPage from './pages/InfoPage';
 
 function App() {
   return (
     <div>
       <Navigation />
       <Routes>
-        <Route path="/" element={<TeamsPage />} />
-        <Route path="/:id" element={<TeamPlayers />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/:teaminfo" element={<InfoPage />} />
       </Routes>
     </div>
   );
