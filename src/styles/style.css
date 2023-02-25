@@ -38,10 +38,11 @@ body {
 
 .input-search {
   border: none;
-  background-color: #3445e0;
+  background-color: brown;
   color: #fff;
   height: 1.5rem;
   border-radius: 0.5rem;
+  width: 100%;
 }
 
 .cont {
@@ -49,30 +50,38 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: brown;
+}
+
+.title {
+  text-align: right;
+  font-size: 28px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7rem;
 }
 
 .nba-main-logo {
-  width: 100%;
-  height: 10rem;
-  background-image: url(../assets/nba-logos/red-nba-logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(209, 3, 3);
-  display: flex;
-  background-position-x: center;
+  width: 50%;
 }
 
 .nba-teams {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   justify-content: center;
+  background-color: rgb(190, 43, 43);
+  padding-top: 10px;
 }
 
 .team {
-  background-image: url(../assets/the-ball/bball-2.jpg);
+  background-image: url(../assets/the-ball/bball-1.jpg);
   background-repeat: no-repeat;
-  background-size: 170%;
+  background-size: 190%;
   background-position: center;
   height: 150px;
   width: 150px;
@@ -80,6 +89,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
+  font-family: lato, sans-serif;
+  color: white;
+
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -88,11 +101,14 @@ body {
   text-decoration: none;
   font-family: lato, sans-serif;
   font-weight: 700;
-  color: rgb(21, 0, 255);
+  color: white;
 }
 
 .link {
   text-decoration: none;
+  font-family: lato, sans-serif;
+  color: white;
+  font-weight: 700;
 }
 
 .back {
@@ -100,12 +116,16 @@ body {
   justify-content: right;
 }
 
-li {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(15px);
+.dark {
+  background-color: brown;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.light {
+  background-color: rgb(190, 43, 43);
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -115,8 +135,8 @@ li {
 ul {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   padding: 10px;
+  background-color: brown;
 }
 
 .det {

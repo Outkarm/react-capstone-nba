@@ -4,6 +4,7 @@ import { IoSearch } from 'react-icons/io5';
 import { getNbaTeamsData } from '../redux/nbaTeams/nbaTeamSlice';
 import TeamsCreator from './TeamsCreator';
 import '../styles/style.css';
+import redNbaLogo from '../assets/nba-logos/redNbaLogo.png';
 
 const TeamsPage = () => {
   const [search, setSearch] = useState('');
@@ -23,7 +24,12 @@ const TeamsPage = () => {
 
   return (
     <div className="cont">
-      <div className="nba-main-logo" />
+      <div className="head">
+        <img src={redNbaLogo} className="nba-main-logo" alt="red" />
+        <div className="title">National Basketball Association</div>
+        <div />
+      </div>
+
       <form className="form-search">
         <input
           className="input-search"

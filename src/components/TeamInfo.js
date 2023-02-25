@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import '../styles/style.css';
 import { IoChevronForwardCircleSharp } from 'react-icons/io5';
+import redNbaLogo from '../assets/nba-logos/redNbaLogo.png';
 
 const TeamInfo = () => {
   const { teaminfo } = useParams();
@@ -15,7 +16,17 @@ const TeamInfo = () => {
       <div className="nba-main-logo" />
       {nbaTeamInfo && (
         <ul>
-          <li>
+          <div className="head">
+            <img src={redNbaLogo} className="nba-main-logo" alt="red" />
+            <div className="title">
+              {nbaTeamInfo.teamName}
+              {' '}
+              <br />
+              Team Info
+            </div>
+            <div />
+          </div>
+          <li className="light">
             <span>Name</span>
             <div className="det">
               <span>
@@ -26,7 +37,7 @@ const TeamInfo = () => {
               <IoChevronForwardCircleSharp />
             </div>
           </li>
-          <li>
+          <li className="dark">
             <span>Known As</span>
             <div className="det">
               <span>
@@ -36,14 +47,14 @@ const TeamInfo = () => {
               <IoChevronForwardCircleSharp />
             </div>
           </li>
-          <li>
+          <li className="light">
             <span>City</span>
             <div className="det">
               <span>{nbaTeamInfo.city}</span>
               <IoChevronForwardCircleSharp />
             </div>
           </li>
-          <li>
+          <li className="dark">
             <span>Confrence</span>
             <div className="det">
               {' '}
@@ -51,14 +62,14 @@ const TeamInfo = () => {
               <IoChevronForwardCircleSharp />
             </div>
           </li>
-          <li>
+          <li className="light">
             <span>Division</span>
             <div className="det">
               <span>{nbaTeamInfo.division}</span>
               <IoChevronForwardCircleSharp />
             </div>
           </li>
-          <li>
+          <li className="dark">
             <span>Abbreviation</span>
             <div className="det">
               <span>{nbaTeamInfo.abbreviation}</span>
