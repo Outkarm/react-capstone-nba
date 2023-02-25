@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: lato, sans-serif;
+  color: white;
+  background-color: #5460cb;
+  font-weight: 700;
+}
+
+.the-navbar {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.set-mic {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.form-search {
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  color: #fff;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.input-search {
+  border: none;
+  background-color: rgb(249, 28, 149);
+  color: #fff;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(209, 0, 126);
+}
+
+.title {
+  text-align: right;
+  font-size: 28px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 7rem;
+}
+
+.nba-main-logo {
+  width: 50%;
+}
+
+.nba-teams {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  background-color: rgb(249, 28, 149);
+  padding-top: 10px;
+}
+
+.team {
+  background:
+    url(../assets/the-ball/bball-1.jpg),
+    linear-gradient(rgba(255, 77, 166, 0.4), rgba(255, 77, 166, 0.4));
+  background-repeat: no-repeat;
+  background-size: 190%;
+  background-position: center;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: lato, sans-serif;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.team-name {
+  text-align: right;
+  text-decoration: none;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  font-family: lato, sans-serif;
+  color: white;
+  font-weight: 700;
+}
+
+.back {
+  display: flex;
+  justify-content: right;
+}
+
+.dark {
+  background-color: rgb(209, 0, 126);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.light {
+  background-color: rgb(249, 28, 149);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgb(209, 0, 126);
+}
+
+.det {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
