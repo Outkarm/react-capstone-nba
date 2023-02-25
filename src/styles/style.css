@@ -9,7 +9,7 @@
 body {
   font-family: lato, sans-serif;
   color: white;
-  background-color: #3445e0;
+  background-color: #5460cb;
   font-weight: 700;
 }
 
@@ -38,7 +38,7 @@ body {
 
 .input-search {
   border: none;
-  background-color: brown;
+  background-color: rgb(249, 28, 149);
   color: #fff;
   height: 1.5rem;
   border-radius: 0.5rem;
@@ -50,7 +50,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background-color: brown;
+  background-color: rgb(209, 0, 126);
 }
 
 .title {
@@ -74,7 +74,7 @@ body {
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
-  background-color: rgb(190, 43, 43);
+  background-color: rgb(249, 28, 149);
   padding-top: 10px;
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .dark {
-  background-color: brown;
+  background-color: rgb(209, 0, 126);
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -124,7 +124,7 @@ body {
 }
 
 .light {
-  background-color: rgb(190, 43, 43);
+  background-color: rgb(249, 28, 149);
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -135,7 +135,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: brown;
+  background-color: rgb(209, 0, 126);
 }
 
 .det {
