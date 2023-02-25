@@ -42,7 +42,7 @@ NBA-population is a single-page website where users can view NBA Tems in the USA
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--[Live Version](https://nba-info.onrender.com)
+-[Live Version](https://nba-teams.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
